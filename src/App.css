@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #202c29;
+  background: #f3f5ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 10% 12%, rgba(196, 221, 193, 0.35), transparent 36%),
+    radial-gradient(ellipse at 92% 84%, rgba(250, 218, 174, 0.3), transparent 34%),
+    #f3f5ef;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px 24px;
+}
+
+.welcome-card {
+  width: min(100%, 720px);
+  overflow: hidden;
+  border: 1px solid rgba(37, 61, 49, 0.08);
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(34, 52, 40, 0.1);
+}
+
+.welcome-copy {
+  padding: 42px 48px 24px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #528068;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin: 13px 0 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(32px, 7vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+}
+
+.intro {
+  margin-bottom: 0;
+  color: #758078;
+  font-size: 16px;
+}
+
+.welcome-image {
+  display: block;
+  width: calc(100% - 48px);
+  height: 220px;
+  margin: 0 24px;
+  border-radius: 18px;
+  background: #e7f2e8;
+  object-fit: cover;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 24px 24px 0;
+}
+
+.detail-panel {
+  min-height: 142px;
+  padding: 18px 20px;
+  border: 1px solid #e9eee8;
+  border-radius: 18px;
+  background: #fbfcfa;
+}
+
+.panel-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 12px;
+  place-items: center;
+  border-radius: 10px;
+  background: #e9f2e9;
+  color: #477457;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.detail-panel h2,
+.colors-section h2 {
+  margin-bottom: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.site-link {
+  color: #477457;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration-color: #b6cbb9;
+  text-underline-offset: 3px;
+}
+
+.site-link:hover {
+  color: #2f573d;
+}
+
+.sum {
+  margin: 0;
+  color: #49564d;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.sum span {
+  padding: 0 5px;
+  color: #9aa79d;
+  font-size: 16px;
+}
+
+.sum strong {
+  color: #477457;
+}
+
+.colors-section {
+  padding: 25px 48px 32px;
+}
+
+.colors-section h2 {
+  margin-bottom: 13px;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.color-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #edf0eb;
+  border-radius: 999px;
+  background: #fff;
+  color: #58625a;
+  font-size: 13px;
+}
+
+.color-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.color-dot-1 {
+  background: #e77668;
+}
+
+.color-dot-2 {
+  background: #6296d7;
+}
+
+.color-dot-3 {
+  background: #6ea778;
+}
+
+footer {
+  padding-top: 20px;
+  color: #8b958c;
+  font-size: 12px;
+}
+
+footer span {
+  color: #d78377;
+}
+
+@media (max-width: 540px) {
+  .page {
+    justify-content: flex-start;
+    padding: 24px 14px;
+  }
+
+  .welcome-card {
+    border-radius: 22px;
+  }
+
+  .welcome-copy {
+    padding: 32px 20px 20px;
+  }
+
+  .welcome-image {
+    width: calc(100% - 28px);
+    height: 170px;
+    margin: 0 14px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 16px 14px 0;
+  }
+
+  .detail-panel {
+    min-height: auto;
+  }
+
+  .colors-section {
+    padding: 22px 20px 26px;
+  }
+}
