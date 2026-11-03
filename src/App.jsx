@@ -42,7 +42,7 @@ function App() {
 
           <section className="detail-panel sum-panel">
             <span className="panel-icon" aria-hidden="true">＋</span>
-            <h2>Трохи математики</h2>
+            <h2>Математика</h2>
             <p className="sum">
               {a} <span>+</span> {b} <span>=</span> <strong>{sum}</strong>
             </p>
